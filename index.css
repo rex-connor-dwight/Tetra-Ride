@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+@font-face {
+    font-family: "ModernAge";
+    src: url(Fonts/Modern\ Age.ttf);
+}
+@font-face {
+    font-family: "Quincy";
+    src: url(Fonts/QuincyItalic-Ea3Rz.ttf);
+}
+
+:root{
+    --lightgreen: #10ec2a;
+    --xogray: #10ec2a;
+    --lightgray: #f6f6f6;
+    --blue: #02223b;
+    --Book: #b9e2d3;
+    --AD:#e1eff2;
+    --lightblue:#283b4c;
+    --gradient: linear-gradient(90deg, var(--darkgreen), var(--lightgreen));
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    background: var(--blue);
+    position: fixed;
+    width: 90%;
+    top: 0;
+}
+
+header img{
+    max-width: 60%;
+    height: auto;
+}
+
+header button{
+    background: var(--lightgreen);
+    color: var(--blue);
+    border: 0;
+    padding: .8rem 1.6rem;
+    border-radius: .3rem;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.Home{
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 13% 9%;
+    background: url(Homeimages/background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.HomeTXT{
+    width: 55%;
+}
+
+.HomeTXT h1{
+    font-family: 'modernAge';
+    font-size: 6vw;
+    color: var(--blue);
+}
+
+.HomeTXT h1 span{
+    font-family: 'modernAge';
+    font-size: 6vw;
+    color: var(--lightgreen);
+}
+
+.HomeTXT h2{
+    margin-top: 2rem;
+    font-size: 2.5vw;
+    font-weight: 400;
+}
+
+.HomeTXT p{
+    margin-top: 1rem;
+    font-size: 1.25vw;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.HomeTXT button{
+    margin-top: 3rem;
+    border: 0;
+    padding: .6rem 1.5rem;
+    background: var(--lightgreen);
+    color: var(--blue);
+    border-radius: 5rem;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.HomeBook{
+    width: 45%;
+    padding-left: 8%;
+}
+
+.HomeBook form{
+    background: var(--Book);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem;
+    border-radius: .5rem;
+}
+
+
+.HomeBook h1{
+    font-size: 1.5rem;
+    color: var(--lightblue);
+    font-weight: 600;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.HomeBook p{
+    font-size: .6rem;
+    margin: 1rem 0;
+}
+
+.HomeBook input{
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem .4rem;
+    border-radius: .2rem;
+    border: 0;
+    background: var(--lightgray);
+}
+
+.HomeBook ::placeholder{
+    font-style: italic;
+}
+
+.HomeBook button{
+    width: 104%;
+    border: 0;
+    background: var(--blue);
+    padding: 1rem 0;
+    color: var(--xogray);
+    margin-top: 3rem;
+    border-radius: .2rem;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Advantage{
+    display: flex;
+    align-items: center;
+    padding: 6rem 6%;
+    background: var(--AD);
+}
+
+.adCard{
+    width: 50%;
+}
+
+.adCard img{
+    max-width: 80%;
+    height: auto;
+}
+
+.adText{
+    width: 50%;
+    padding-left: 5rem;
+}
+
+.adText h1{
+    font-family: "Quincy";
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--blue);
+}
+
+.adText p{
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: justify;
+    color: var(--blue);
+}
+
+.adText button{
+    border: 0;
+    color: var(--lightgreen);
+    background: var(--blue);
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.CTA{
+    display: flex;
+    padding: 5rem 8%;
+    background: url(Homeimages/cta\ bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ctaLeft{
+    width: 50%;
+    margin-right: 4rem;
+}
+
+.ctaLeft details{
+    background: var(--blue);
+    margin: 2rem 0;
+    padding: 1rem 5%;
+    color: var(--lightgreen);
+    cursor: pointer;
+}
+
+.ctaLeft details p{
+    background: var(--AD);
+    padding: 2.5rem 1.2rem;
+    color: var(--blue);
+    margin: 1rem -1.85vw -2vw -1.85vw;
+    font-size: .8rem;
+}
+
+.ctaRight{
+    width: 50%;
+    background: var(--AD);
+    padding: 2rem;
+}
+
+.ctaRight h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.ctaRight h2{
+    margin-top: 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.ctaRight p{
+    font-size: .7rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.ctaRight button{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: var(--blue);
+    color: var(--lightgreen);
+    padding: 1rem 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.ctaRight button img{
+    margin-right: .5rem;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 5%;
+        background: var(--blue);
+        position: fixed;
+        width: 90%;
+        top: 0;
+    }
+    
+    header img{
+        max-width: 60%;
+        height: auto;
+    }
+    
+    header button{
+        background: var(--lightgreen);
+        color: var(--blue);
+        border: 0;
+        padding: .8rem 1.6rem;
+        border-radius: .3rem;
+        font-size: 12px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    .Home{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+        padding: 9rem 9% 5rem 9%;
+        background: url(Homeimages/background.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .HomeTXT{
+        width: 100%;
+    }
+    
+    .HomeTXT h1{
+        font-family: 'modernAge';
+        font-size: 12vw;
+        color: var(--blue);
+    }
+    
+    .HomeTXT h1 span{
+        font-family: 'modernAge';
+        font-size: 12vw;
+        color: var(--lightgreen);
+    }
+    
+    .HomeTXT h2{
+        margin-top: 1rem;
+        font-size: 5.5vw;
+        font-weight: 400;
+    }
+    
+    .HomeTXT p{
+        margin-top: .6rem;
+        font-size: 2.7vw;
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    .HomeTXT button{
+        margin: 2rem 0;
+        border: 0;
+        padding: .6rem 1.5rem;
+        background: var(--lightgreen);
+        color: var(--blue);
+        border-radius: .4rem;
+        font-size: 15px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    
+    .HomeBook{
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .HomeBook form{
+        background: var(--Book);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2rem;
+        border-radius: .5rem;
+    }
+    
+    
+    .HomeBook h1{
+        font-size: 1.5rem;
+        color: var(--lightblue);
+        font-weight: 600;
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    .HomeBook p{
+        font-size: .6rem;
+        margin: .6rem 0;
+    }
+    
+    .HomeBook input{
+        width: 100%;
+        margin: .8rem 0;
+        padding: 1rem .4rem;
+        border-radius: .2rem;
+        border: 0;
+        background: var(--lightgray);
+    }
+    
+    .HomeBook ::placeholder{
+        font-style: italic;
+    }
+    
+    .HomeBook button{
+        width: 104%;
+        border: 0;
+        background: var(--blue);
+        padding: 1rem 0;
+        color: var(--xogray);
+        margin-top: 2rem;
+        border-radius: .2rem;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .Advantage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 6% 3rem 6%;
+        background: var(--AD);
+    }
+    
+    .adCard{
+        width: 100%;
+    }
+    
+    .adCard img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .adText{
+        width: 100%;
+        padding-left: 0rem;
+        margin-top: 4rem;
+    }
+    
+    .adText h1{
+        font-family: "Quincy";
+        font-size: 3rem;
+        font-weight: 300;
+        color: var(--blue);
+    }
+    
+    .adText p{
+        margin: 2rem 0;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: justify;
+        color: var(--blue);
+    }
+    
+    .adText button{
+        border: 0;
+        color: var(--lightgreen);
+        background: var(--blue);
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    
+    .CTA{
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 8%;
+        background: url(Homeimages/cta\ bg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .ctaLeft{
+        width: 100%;
+        margin-right: 0rem;
+    }
+    
+    .ctaLeft details{
+        background: var(--blue);
+        margin: 2rem 0;
+        padding: 1rem 5%;
+        color: var(--lightgreen);
+        cursor: pointer;
+    }
+    
+    .ctaLeft details p{
+        background: var(--AD);
+        padding: 2.5rem 1.2rem;
+        color: var(--blue);
+        margin: 1rem -4vw -5vw -4vw;
+        font-size: .8rem;
+    }
+    
+    .ctaRight{
+        width: auto;
+        background: var(--AD);
+        padding: 2rem ;
+    }
+    
+    .ctaRight h1{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    .ctaRight h2{
+        margin-top: 1.6rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .ctaRight p{
+        font-size: .7rem;
+        font-weight: 300;
+        font-style: italic;
+    }
+    
+    .ctaRight button{
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: var(--blue);
+        color: var(--lightgreen);
+        padding: 1rem 0;
+        border: 0;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .ctaRight button img{
+        margin-right: .5rem;
+    }
+
+}
