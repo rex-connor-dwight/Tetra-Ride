@@ -10,7 +10,7 @@
 <body>
 
     <header>
-        <a href="#"><img src="Homeimages/tr.png" alt="logo"></a>
+        <a href="index.html"><img src="Homeimages/tr.png" alt="logo"></a>
 
         <a href="book.html"><button>Book A Ride</button></a>
     </header>
@@ -19,26 +19,32 @@
 
 
     <div class="rideDetails">
-        <form action="">
+        <form method="dialog" action="submit">
             <h1>Ride details</h1>
 
-            <input type="text" placeholder="from" required>
-            <input type="text" placeholder="to" required>
-            <input type="datetime" placeholder="date" required>
+            <input type="text" id="userPin" placeholder="from" >
+            <select name="cars" id="userDes" >
+                <option value="Cherkasy">Cherkasy</option>
+                <option value="Chisinau">Chisinau</option>
+                <option value="Kiev">Kiev</option>
+                <option value="Lviv">Lviv</option>
+                <option value="Warsaw">Warsaw</option>
+              </select>
+            <input type="date" id="userDate" placeholder="date" >
 
-            <button>Next</button>
+            <button id="next">Next</button>
         </form>
     </div>
 
     <img src="Homeimages/right-arrow .png" alt="next">
 
     <div class="rideDetails">
-        <form action="">
+        <form action="submit">
             <h1>Passenger's details</h1>
 
-            <input type="text" placeholder="name" required>
-            <input type="text" placeholder="email" required>
-            <input type="text" placeholder="address" required>
+            <input type="text" id="userName" placeholder="name" required>
+            <input type="text" id="userEmail" placeholder="email" required>
+            <input type="text" id="userAddress" placeholder="address" required>
 
             <button>Next</button>
         </form>
@@ -46,29 +52,317 @@
 
     <img src="Homeimages/right-arrow .png" alt="next">
 
-    <div class="rideDetails">
-        <form action="">
+    <div class="rideDetailsReceipt">
+        <form method="dialog"  action="submit">
             <h1>Booking Pass</h1>
 
-            <h3>Location:</h3>
-            <h3>Destination:</h3>
-            <h3>Date:</h3>
-            <h3>Name:</h3>
-            <h3>Email:</h3>
-            <h3>Address:</h3>
-
+            <div class="recieptText">
+                <h3>Location:</h3> <p id="from"></p>
+            </div>
+            <div class="recieptText">
+                <h3>Destination:</h3> <p id="torh"></p>
+            </div>
+            <div class="recieptText">
+                <h3>Date:</h3> <p id="nDate"></p>
+            </div>   
+            <div class="recieptText">
+                <h3>Name:</h3> <p id="nName"></p>
+            </div> 
+            <div class="recieptText">
+                <h3>Email:</h3> <p id="nEmail"></p>
+            </div> 
+            <div class="recieptText">
+                <h3>Address:</h3> <p id="nAddress"></p>
+            </div>         
+            
             <p>
                 Time and other informations about the trip will be sent to the passenger via mail
             </p>
 
-            <button>Checkout</button>
+            <button id="showPopupButton">Checkout</button>
         </form>
     </div>
+
+        <section id="popup" class="popup">
+
+            <header class="headR">
+                <a class="LogoR" href="index.html"><img src="Homeimages/tr.png" alt="logo"></a>
+        
+                <a href="book.html"><button>Book A Ride</button></a>
+            </header>
+
+            <div class="popupcon">
+                <img class="warning" src="Homeimages/warning.png" alt="">
+                <h2>Notice</h2>
+                <p>
+                    Dear esteemed customer, due to the economic and financial regulattions placed on the mobility industry by the Ukrainian government, you may likely encounter a static trip price for most destinations, do bear with us , be rest assured that we are committed to the safety and betterment of our customers
+                </p>
+        
+                <div class="ctaBNT">
+                    <button id="closePopupButton">Cancel</button>
+                <button id="checkOut">Continue</button>
+                </div>
+        
+            </div>
+
+        </section>
+
+        <section id="paymentOption">
+
+            <header class="headR">
+                <a class="LogoR" href="index.html"><img src="Homeimages/tr.png" alt="logo"></a>
+        
+                <a href="book.html"><button>Book A Ride</button></a>
+            </header>
+
+            <div class="payCon">
+                <h1>Payment Option</h1>
+
+                <div class="payIcon">
+                    <div class="piTop">
+                        <button id="showPayPal"><img src="Homeimages/paypal.png" alt=""></button>
+                        <button id="showApplePay"><img src="Homeimages/ApplePay.png" alt=""></button>
+                    </div>
+
+                    <div class="piButtom">
+                        <button id="showCardPay"><img src="Homeimages/DebitCard.png" alt=""></button>
+                        <button><img src="Homeimages/Crypto.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="total"><h3>Total: EURO 560.00</h3></div>
+            </div>
+
+        </section>
+
+
+        <section id="payPal" class="payPal">
+
+            <header class="headR">
+                <a class="LogoR" href="index.html"><img src="Homeimages/tr.png" alt="logo"></a>
+        
+                <a href="book.html"><button>Book A Ride</button></a>
+            </header>
+
+            <div class="payPalPayment">
+                <img src="Homeimages/oops.png" alt="">
+
+                <h1>PayPal not available in this region</h1>
+                <p>Hey there, we are sorry for the inconvinences your’ve just revived, we are working tirelessly to find a solution. We believe this option should be up in a short while</p>
+
+                <button id="closePayPal">Close</button>
+            </div>
+        </section>
+
+
+        <section id="applePay" class="applePay">
+
+            <header class="headR">
+                <a class="LogoR" href="index.html"><img src="Homeimages/tr.png" alt="logo"></a>
+        
+                <a href="book.html"><button>Book A Ride</button></a>
+            </header>
+            
+            <div class="applePayPayment">
+                <img src="Homeimages/oops.png" alt="">
+
+                <h1>ApplePay not available in this region</h1>
+                <p>Hey there, we are sorry for the inconvinences your’ve just revived, we are working tirelessly to find a solution. We believe this option should be up in a short while</p>
+
+                <button id="closeApplePay">Close</button>
+            </div>
+        </section>
+
+
+        <section id="cardPay" class="cardPay">
+
+            <header class="headR">
+                <a class="LogoR" href="index.html"><img src="Homeimages/tr.png" alt="logo"></a>
+        
+                <a href="book.html"><button>Book A Ride</button></a>
+            </header>
+            
+            <div class="cardPayPayment">
+
+                <h1>Fill in Card Details</h1>
+
+                <form action="">
+                    <div class="CardDetails">
+                        <div class="cardNO">
+                            <h3>Card Number</h3>
+                            <input type="number" placeholder="0000 0000 0000 0000" required>
+                        </div>
+
+                        <div class="excv">
+                            <div class="date">
+                                <h3>Expiry Date</h3>
+                                <input type="number" placeholder="12/23" required>
+                            </div>
+                            <div class="cvv">
+                                <h3> CVV</h3>
+                                <input type="number" placeholder="123" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="security">
+                        
+                        <h5>Payment secured</h5>
+                        <img class="ScImg" src="Homeimages/secure.png" alt="">
+                    </div>
+
+                    <button>Pay</button>
+                </form>
+            </div>
+        </section>
+
 
     </section>
 
 
-   
-    
+    <script>
+
+        const userPin = document.getElementById("userPin");
+        const from = document.getElementById("from");
+
+        const userDes = document.getElementById("userDes");
+        const torh = document.getElementById("torh");
+
+        const userDate = document.getElementById("userDate");
+        const nDate = document.getElementById("nDate");
+
+
+        const userName = document.getElementById("userName");
+        const nName = document.getElementById("nName");
+
+        const userEmail = document.getElementById("userEmail");
+        const nEmail = document.getElementById("nEmail");
+
+        const userAddress = document.getElementById("userAddress");
+        const nAddress = document.getElementById("nAddress");
+
+
+        
+
+
+
+
+
+
+        userPin.addEventListener("input", function () {
+        from.textContent = userPin.value;
+    });
+
+    userDes.addEventListener("input", function () {
+        torh.textContent = userDes.value;
+    });  
+
+    userDate.addEventListener("input", function () {
+        nDate.textContent = userDate.value;
+    }); 
+
+
+    userName.addEventListener("input", function () {
+        nName.textContent = userName.value;
+    }); 
+
+    userEmail.addEventListener("input", function () {
+        nEmail.textContent = userEmail.value;
+    }); 
+
+    userAddress.addEventListener("input", function () {
+        nAddress.textContent = userAddress.value;
+    });
+
+        
+     // JavaScript to show and hide the popup
+     const showPopupButton = document.getElementById('showPopupButton');
+        const popup = document.getElementById('popup');
+        const closePopupButton = document.getElementById('closePopupButton');
+
+        showPopupButton.addEventListener('click', () => {
+            popup.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        });
+
+        closePopupButton.addEventListener('click', () => {
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        });
+
+
+         // Function to check if all inputs are filled
+         function checkInputs() {
+            if (userPin.value.trim() !== '' && userDes.value.trim() !== '' && userDate.value.trim() !== '') {
+                showPopupButton.removeAttribute('disabled');
+            } else {
+                showPopupButton.setAttribute('disabled', 'true');
+            }
+        }
+         // Add event listeners to the input fields to check for changes
+         userPin.addEventListener('input', checkInputs);
+         userDes.addEventListener('input', checkInputs);
+         userDate.addEventListener('input', checkInputs);
+
+
+         // JavaScript to show and hide the paymenOption
+     const checkOut = document.getElementById('checkOut');
+        const paymentOption = document.getElementById('paymentOption');
+        //const closePopupButton = document.getElementById('closePopupButton');
+
+        checkOut.addEventListener('click', () => {
+            paymentOption.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        });
+
+        closePopupButton.addEventListener('click', () => {
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        });
+
+        //PayPal popup
+        const showPayPal = document.getElementById('showPayPal');
+        const payPal = document.getElementById('payPal');
+        const closePayPal = document.getElementById('closePayPal');
+
+        showPayPal.addEventListener('click', () => {
+            payPal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        });
+
+        closePayPal.addEventListener('click', () => {
+            payPal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        });
+
+
+        //applePay popup
+        const showApplePay = document.getElementById('showApplePay');
+        const applePay = document.getElementById('applePay');
+        const closeApplePay = document.getElementById('closeApplePay');
+
+        showApplePay.addEventListener('click', () => {
+            applePay.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        });
+
+        closeApplePay.addEventListener('click', () => {
+            applePay.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        });
+
+
+        //cardPay popup
+        const showCardPay = document.getElementById('showCardPay');
+        const cardPay = document.getElementById('cardPay');
+
+        showCardPay.addEventListener('click', () => {
+            cardPay.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        });
+
+
+        
+    </script>
+ 
 </body>
 </html>

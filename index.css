@@ -335,7 +335,21 @@ header button{
     padding: 2rem 2% 0 2%;
 }
 
+
+
 .rideDetails{
+    background: var(--AD);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 1.5rem;
+    width: 30%;
+    height: 400px;
+}
+
+.rideDetailsReceipt{
     background: var(--AD);
     display: flex;
     flex-direction: column;
@@ -356,13 +370,34 @@ header button{
     margin-bottom: 2rem;
 }
 
+.rideDetailsReceipt h1{
+    font-size: 1.5rem;
+    color: var(--blue);
+    font-weight: 600;
+    text-align: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+
 .rideDetails h3{
     font-weight: 600;
     font-size: 1rem;
     margin: 1rem 0;
 }
 
+.rideDetailsReceipt h3{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: .6rem 0;
+}
+
 .rideDetails p{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.rideDetailsReceipt p{
     font-size: .7rem;
     font-weight: 500;
 }
@@ -376,6 +411,20 @@ header button{
     background: var(--lightgray);
 }
 
+.rideDetails select{
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem .4rem;
+    border-radius: .2rem;
+    border: 0;
+    background: var(--lightgray);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+
 .rideDetails button{
     width: 100%;
     border: 0;
@@ -387,6 +436,418 @@ header button{
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
+}
+
+.rideDetailsReceipt button{
+    width: 100%;
+    border: 0;
+    background: var(--blue);
+    padding: 1rem 0 1rem 0;
+    color: var(--xogray);
+    margin-top: 3rem;
+    border-radius: .2rem;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.recieptText{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.recieptText p{
+    margin-left: 1rem;
+    color: var(--blue);
+    font-size: .8rem;
+}
+
+.popupcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--blue);
+    color: var(--AD);
+    border-radius: 10px;
+    padding: 2rem 4% 2rem 4%;
+    width: 35vw;
+}
+
+.popupcon p{
+    font-weight: 400;
+    font-size: 1vw;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.warning{
+    max-width: 5vh;
+    height: 5vh;
+    display: flex;
+    margin: 1rem 0 1rem 0;
+}
+
+.popupcon h2{
+    font-weight: 700;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.ctaBNT{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#checkOut{
+    border: none;
+    background: var(--xogray);
+    color: var(--blue);
+    border-radius: .2rem;
+    padding: 1.1em 3.5em;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: .8vw;
+}
+
+#closePopupButton{
+    border: none;
+    background: var(--AD);
+    color: var(--blue);
+    border-radius: .2rem;
+    padding: 1.1em 3.5em;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: .8vw;
+}
+
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem 4% 0 4%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    background-color: var(--blue);
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--AD);
+    background: url(Homeimages/popup\ bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#paymentOption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem 4% 0 4%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    background-color: var(--blue);
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--blue);
+    background: var(--lightgray);
+}
+
+
+.payCon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--AD);
+    color: var(--blue);
+    border-radius: 10px;
+    padding: 2rem 4% 2rem 4%;
+    width: 35vw;
+}
+
+.payCon h1{
+    font-weight: 700;
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.payIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.piTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.piButtom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payIcon img{
+    max-width: 85%;
+    height: auto;
+    border-radius: .3rem;
+}
+
+.payCon button{
+    border: none;
+    background: var(--AD);
+    color: var(--blue);
+    border-radius: .2rem;
+    padding: 1.1em 3.5em;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: .8vw;
+}
+
+.total{
+    font-weight: 700;
+    font-size: 1.2vw;
+    margin: 2rem 0 2vw 0;
+    background: var(--blue);
+    padding: 1rem 7.3vw;
+    color: var(--lightgreen);
+}
+
+
+.payPal{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    background: var(--lightgray);
+    width: 100%;
+}
+
+.payPalPayment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--AD);
+    color: var(--blue);
+    border-radius: 10px;
+    padding: 2rem 4% 2rem 4%;
+    width: 30vw;
+}
+
+.payPalPayment img{
+    max-width: 4vw;
+    height: 4vw;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.payPalPayment h1{
+    font-size: 1.4vw;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.payPalPayment p{
+    font-size: .8vw;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 4vw;
+}
+
+.payPalPayment button{
+    font-size: .8rem;
+    font-weight: 600;
+    background: var(--blue);
+    padding: .7vw 6vw;
+    color: var(--lightgreen);
+    border: 0;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+
+.applePay{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    background: var(--lightgray);
+    width: 100%;
+}
+
+.applePayPayment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--AD);
+    color: var(--blue);
+    border-radius: 10px;
+    padding: 2rem 4% 2rem 4%;
+    width: 30vw;
+}
+
+.applePayPayment img{
+    max-width: 4vw;
+    height: 4vw;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.applePayPayment h1{
+    font-size: 1.4vw;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.applePayPayment p{
+    font-size: .8vw;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0 4vw;
+}
+
+.applePayPayment button{
+    font-size: .8rem;
+    font-weight: 600;
+    background: var(--blue);
+    padding: .7vw 6vw;
+    color: var(--lightgreen);
+    border: 0;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+
+
+.cardPay{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    background: var(--lightgray);
+    width: 100%;
+}
+
+.cardPayPayment{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--AD);
+    color: var(--blue);
+    border-radius: 10px;
+    padding: 2rem 4% 2rem 4%;
+    width: 30vw;
+}
+
+.cardPayPayment h1{
+    font-size: 1.7vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.cardPayPayment form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CardDetails{
+    display: flex;
+    flex-direction: column;
+    margin: 3vw 0 1.5vw 0;
+    width: 100%;
+}
+
+.CardDetails h3{
+    font-size: .7vw;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: .2rem;
+    padding-left: .3rem;
+}
+
+.CardDetails input{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1.2vw .5vw;
+    border: 0;
+    border-radius: .2rem;
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.excv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.security{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.6vw;
+}
+
+.security h5{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.ScImg{
+    max-width: 9%;
+    height: 9%;
+    margin-left: .3rem;
+}
+
+.cardPay form button{
+    font-size: 1.1vw;
+    font-weight: 600;
+    background: var(--blue);
+    padding: .7vw 2vw;
+    color: var(--lightgreen);
+    border: 0;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    width: 50%;
 }
 
 
@@ -731,6 +1192,18 @@ header button{
         width: 70%;
         height: 400px;
     }
+
+    .rideDetailsReceipt{
+        background: var(--AD);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        margin: 0 1.5rem;
+        width: 70%;
+        height: 400px;
+    }
     
     .rideDetails h1{
         font-size: 1.5rem;
@@ -762,6 +1235,416 @@ header button{
         font-weight: 700;
         cursor: pointer;
     }
+
+    
+
+    .popupcon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--blue);
+        color: var(--AD);
+        border-radius: 10px;
+        padding: .7rem 4% 2rem 4%;
+        width: 50vw;
+    }
+    
+    .popupcon p{
+        font-weight: 400;
+        font-size: 1.4vw;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .warning{
+        max-width: 5vh;
+        rotate: -90deg;
+        height: 5vh;
+        display: flex;
+        margin: 0rem 0 0rem 0;
+    }
+    
+    .popupcon h2{
+        font-weight: 700;
+        font-size: 3.5vw;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+    }
+    
+    .ctaBNT{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 65%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #checkOut{
+        border: none;
+        background: var(--xogray);
+        color: var(--blue);
+        border-radius: .2rem;
+        padding: 1.1em 3.5em;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.2vw;
+    }
+    
+    #closePopupButton{
+        border: none;
+        background: var(--AD);
+        color: var(--blue);
+        border-radius: .2rem;
+        padding: 1.1em 3.5em;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.2vw;
+    }
+    
+    
+    .popup{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1000vh;
+        padding: 0;
+        width: 100%;
+        position: fixed;
+        padding: 0;
+        border-radius: 5px;
+        color: var(--AD);
+        background: url(Homeimages/Group\ 20.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .LogoR{
+        rotate: -90deg;
+    }
+
+    .headR{
+        height: 6%;
+    }
+
+    #paymentOption{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1000vh;
+        padding: 2rem 4% 0 4%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        background-color: var(--blue);
+        padding: 20px;
+        border-radius: 5px;
+        color: var(--blue);
+        background: var(--lightgray);
+    }
+    
+    
+    .payCon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--AD);
+        color: var(--blue);
+        border-radius: 10px;
+        padding: 2rem 4% 2rem 4%;
+        width: 50vw;
+    }
+    
+    .payCon h1{
+        font-weight: 700;
+        font-size: 3vw;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        z-index: 1;
+    }
+    
+    .payIcon{
+        display: flex;
+    }
+
+    .piTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -.5rem;
+    }
+    
+    .piButtom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -2rem;
+    }
+    
+    .payIcon img{
+        max-width: 100%;
+        height: auto;
+        border-radius: .3rem;
+        rotate: -90deg;
+    }
+
+    
+    .payCon button{
+        border: none;
+        background: var(--AD);
+        color: var(--blue);
+        border-radius: .2rem;
+        padding: 1.1em 3.5em;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: .8vw;
+    }
+
+    .payCon button :hover{
+        opacity: 40%;
+    }
+    
+    .total{
+        font-weight: 700;
+        font-size: 1.8vw;
+        margin: 0rem 0 2vw 0;
+        background: var(--blue);
+        padding: 1rem 12.2vw;
+        color: var(--lightgreen);
+    }
+
+
+    .payPal{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: 1000%;
+        background: var(--lightgray);
+        width: 100%;
+    }
+    
+    .payPalPayment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--AD);
+        color: var(--blue);
+        border-radius: 10px;
+        padding: 2rem 4% 2rem 4%;
+        width: 50vw;
+    }
+    
+    .payPalPayment img{
+        max-width: 7vw;
+        height: 7vw;
+        margin: 2.5vw 0 7vw 0;
+        rotate: -90deg;
+    }
+    
+    .payPalPayment h1{
+        font-size: 2.4vw;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    
+    .payPalPayment p{
+        font-size: 1.3vw;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding: 0 4vw;
+    }
+    
+    .payPalPayment button{
+        font-size: .7rem;
+        font-weight: 600;
+        background: var(--blue);
+        padding: 1.5vw 10vw;
+        color: var(--lightgreen);
+        border: 0;
+        border-radius: 5rem;
+        cursor: pointer;
+    }
+
+
+
+
+    .applePay{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: 1000%;
+        background: var(--lightgray);
+        width: 100%;
+    }
+    
+    .applePayPayment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--AD);
+        color: var(--blue);
+        border-radius: 10px;
+        padding: 2rem 4% 2rem 4%;
+        width: 50vw;
+    }
+    
+    .applePayPayment img{
+        max-width: 7vw;
+        height: 7vw;
+        margin: 2.5vw 0 7vw 0;
+        rotate: -90deg;
+    }
+    
+    .applePayPayment h1{
+        font-size: 2.4vw;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    
+    .applePayPayment p{
+        font-size: 1.3vw;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding: 0 4vw;
+    }
+    
+    .applePayPayment button{
+        font-size: .7rem;
+        font-weight: 600;
+        background: var(--blue);
+        padding: 1.5vw 10vw;
+        color: var(--lightgreen);
+        border: 0;
+        border-radius: 5rem;
+        cursor: pointer;
+    }
+
+
+    .cardPay{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: 1000%;
+        background: var(--lightgray);
+        width: 100%;
+    }
+    
+    .cardPayPayment{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--AD);
+        color: var(--blue);
+        border-radius: 10px;
+        padding: 2rem 4% 2rem 4%;
+        width: 50vw;
+    }
+    
+    .cardPayPayment h1{
+        font-size: 3vw;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 1vw;
+    }
+    
+    .cardPayPayment form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .CardDetails{
+        display: flex;
+        flex-direction: column;
+        margin: 8vw 0 0vw 0;
+        width: 90%;
+    }
+    
+    .CardDetails h3{
+        font-size: 1.3vw;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: .2rem;
+        padding-left: .3rem;
+    }
+    
+    .CardDetails input{
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 1.2vw .9vw;
+        border: 0;
+        border-radius: .2rem;
+        font-size: 1.8vw;
+        font-weight: 400;
+        font-style: italic;
+    }
+    
+    .excv{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .security{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0vw;
+    }
+    
+    .security h5{
+        font-size: 1.4vw;
+        font-weight: 500;
+        margin-right: 1vw;
+    }
+    
+    .ScImg{
+        max-width: 9%;
+        height: 9%;
+        margin-left: .9rem;
+        rotate: -90deg;
+    }
+    
+    .cardPay form button{
+        font-size: 1.8vw;
+        font-weight: 600;
+        background: var(--blue);
+        padding: 1.2vw 2vw;
+        color: var(--lightgreen);
+        border: 0;
+        border-radius: 5rem;
+        cursor: pointer;
+        margin: -4vw 0 .3rem 0;
+        width: 50%;
+    }
+    
     
 
 }
