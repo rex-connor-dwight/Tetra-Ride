@@ -1250,13 +1250,14 @@ header button{
         color: var(--AD);
         border-radius: 10px;
         padding: .7rem 4% 2rem 4%;
-        width: 50vw;
+        width: 75vw;
     }
     
     .popupcon p{
         font-weight: 400;
-        font-size: 1.4vw;
+        font-size: 2.4vw;
         margin-bottom: 1rem;
+        padding: 0 1rem;
         text-align: center;
     }
     
@@ -1270,7 +1271,7 @@ header button{
     
     .popupcon h2{
         font-weight: 700;
-        font-size: 3.5vw;
+        font-size: 6.5vw;
         text-transform: uppercase;
         margin-bottom: 1rem;
         margin-top: -1rem;
@@ -1280,7 +1281,7 @@ header button{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 65%;
+        width: 85%;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -1293,7 +1294,7 @@ header button{
         padding: 1.1em 3.5em;
         cursor: pointer;
         font-weight: 600;
-        font-size: 1.2vw;
+        font-size: 2.4vw;
     }
     
     #closePopupButton{
@@ -1304,7 +1305,7 @@ header button{
         padding: 1.1em 3.5em;
         cursor: pointer;
         font-weight: 600;
-        font-size: 1.2vw;
+        font-size: 2.4vw;
     }
     
     
@@ -1363,12 +1364,12 @@ header button{
         color: var(--blue);
         border-radius: 10px;
         padding: 2rem 4% 2rem 4%;
-        width: 50vw;
+        width: 75vw;
     }
     
     .payCon h1{
         font-weight: 700;
-        font-size: 3vw;
+        font-size: 5vw;
         text-transform: uppercase;
         margin-bottom: 1rem;
         z-index: 1;
@@ -1376,6 +1377,7 @@ header button{
     
     .payIcon{
         display: flex;
+        width: 80%;
     }
 
     .piTop{
@@ -1411,16 +1413,13 @@ header button{
         font-size: .8vw;
     }
 
-    .payCon button :hover{
-        opacity: 40%;
-    }
     
     .total{
         font-weight: 700;
-        font-size: 1.8vw;
+        font-size: 2.8vw;
         margin: 0rem 0 2vw 0;
         background: var(--blue);
-        padding: 1rem 12.2vw;
+        padding: 1rem 12vw;
         color: var(--lightgreen);
     }
 
@@ -1447,24 +1446,24 @@ header button{
         color: var(--blue);
         border-radius: 10px;
         padding: 2rem 4% 2rem 4%;
-        width: 50vw;
+        width: 70vw;
     }
     
     .payPalPayment img{
-        max-width: 7vw;
-        height: 7vw;
+        max-width: 9vw;
+        height: 9vw;
         margin: 2.5vw 0 7vw 0;
         rotate: -90deg;
     }
     
     .payPalPayment h1{
-        font-size: 2.4vw;
+        font-size: 3.8vw;
         font-weight: 700;
         margin-bottom: 1rem;
     }
     
     .payPalPayment p{
-        font-size: 1.3vw;
+        font-size: 2.3vw;
         font-weight: 400;
         margin-bottom: 2rem;
         text-align: center;
@@ -1472,7 +1471,7 @@ header button{
     }
     
     .payPalPayment button{
-        font-size: .7rem;
+        font-size: 1.1rem;
         font-weight: 600;
         background: var(--blue);
         padding: 1.5vw 10vw;
@@ -1507,24 +1506,24 @@ header button{
         color: var(--blue);
         border-radius: 10px;
         padding: 2rem 4% 2rem 4%;
-        width: 50vw;
+        width: 70vw;
     }
     
     .applePayPayment img{
-        max-width: 7vw;
-        height: 7vw;
+        max-width: 9vw;
+        height: 9vw;
         margin: 2.5vw 0 7vw 0;
         rotate: -90deg;
     }
     
     .applePayPayment h1{
-        font-size: 2.4vw;
+        font-size: 3.7vw;
         font-weight: 700;
         margin-bottom: 1rem;
     }
     
     .applePayPayment p{
-        font-size: 1.3vw;
+        font-size: 2.3vw;
         font-weight: 400;
         margin-bottom: 2rem;
         text-align: center;
@@ -1532,7 +1531,7 @@ header button{
     }
     
     .applePayPayment button{
-        font-size: .7rem;
+        font-size: 1.1rem;
         font-weight: 600;
         background: var(--blue);
         padding: 1.5vw 10vw;
@@ -1564,11 +1563,11 @@ header button{
         color: var(--blue);
         border-radius: 10px;
         padding: 2rem 4% 2rem 4%;
-        width: 50vw;
+        width: 75vw;
     }
     
     .cardPayPayment h1{
-        font-size: 3vw;
+        font-size: 5vw;
         font-weight: 700;
         text-align: center;
         margin-top: 1vw;
@@ -1588,7 +1587,7 @@ header button{
     }
     
     .CardDetails h3{
-        font-size: 1.3vw;
+        font-size: 2vw;
         font-weight: 400;
         font-style: italic;
         margin-bottom: .2rem;
@@ -1601,7 +1600,7 @@ header button{
         padding: 1.2vw .9vw;
         border: 0;
         border-radius: .2rem;
-        font-size: 1.8vw;
+        font-size: 2.8vw;
         font-weight: 400;
         font-style: italic;
     }
@@ -1620,7 +1619,7 @@ header button{
     }
     
     .security h5{
-        font-size: 1.4vw;
+        font-size: 2.4vw;
         font-weight: 500;
         margin-right: 1vw;
     }
@@ -1633,15 +1632,15 @@ header button{
     }
     
     .cardPay form button{
-        font-size: 1.8vw;
+        font-size: 3.5vw;
         font-weight: 600;
         background: var(--blue);
-        padding: 1.2vw 2vw;
+        padding: 1.9vw 2vw;
         color: var(--lightgreen);
         border: 0;
         border-radius: 5rem;
         cursor: pointer;
-        margin: -4vw 0 .3rem 0;
+        margin: -5vw 0 .3rem 0;
         width: 50%;
     }
     
