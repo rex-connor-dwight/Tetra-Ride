@@ -40,6 +40,7 @@ function userDesValue(){
         "Alchevsk": "EURO 580",
         "Berdiansk": "EURO 440",
         "bilaTserkva": "EURO 420",
+        "Belarus": "EURO 600",
         "Brovary": "EURO 425",
         "Cherkasy": "EURO 540",
         "Chernihiv": "EURO 490",
@@ -64,6 +65,7 @@ function userDesValue(){
         "Kremenchuk": "EURO 404",
         "Kropyvnytskyi": "EURO 503",
         "Kryvyi-Rih": "EURO 597",
+        "Kyiv": "EURO 460",
         "Luhansk": "EURO 592",
         "Lutsk": "EURO 543",
         "Lviv": "EURO 587",
@@ -72,11 +74,14 @@ function userDesValue(){
         "Mariupol": "EURO 497",
         "Melitopol": "EURO 455",
         "Mukacheve": "EURO 554",
+        "Moldova": "EURO 600",
         "Mykolaiv": "EURO 399",
         "Nikopol": "EURO 603",
         "Odesa": "EURO 605",
         "Pavlohrad": "EURO 594",
+        "Poland": "EURO 700",
         "Poltava": "EURO 539",
+        "Romania": "EURO 650",
         "Rivne": "EURO 598",
         "Sevastopol": "EURO 599",
         "Sievierodonetsk": "EURO 449",
@@ -95,3 +100,22 @@ function userDesValue(){
 
     document.getElementById("totalAmount").textContent =  userDesPrice[userDes];
 }
+
+
+
+
+// next form dynamics
+
+
+function focusNextInput(currentFormId, nextFormId) {
+    // Get the current form and next form elements
+    var currentForm = document.getElementById(currentFormId);
+    var nextForm = document.getElementById(nextFormId);
+
+    // Get the input elements of the current and next forms
+    var currentInput = currentForm.querySelector('input');
+    var nextInput = nextForm.querySelector('input');
+
+    // Focus on the next input element
+    nextInput.focus();
+  }

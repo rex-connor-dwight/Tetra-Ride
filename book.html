@@ -19,13 +19,14 @@
 
 
     <div class="rideDetails">
-        <form method="dialog" action="submit">
+        <form method="dialog" action="submit" id="form1">
             <h1>Ride details</h1>
 
             <input type="text" id="userPin" placeholder="from" >
             <select onchange="userDesValue()" name="cars" id="userDes" >
                 <option value="Alchevsk">Alchevsk</option>
                 <option value="Berdiansk">Berdiansk</option>
+                <option value="Belarus">Belarus</option>
                 <option value="bilaTserkva">Bila Tserkva</option>
                 <option value="Brovary">Brovary</option>
                 <option value="Cherkasy">Cherkasy</option>
@@ -51,6 +52,7 @@
                 <option value="Kremenchuk">Kremenchuk</option>
                 <option value="Kropyvnytskyi">Kropyvnytskyi</option>
                 <option value="Kryvyi-Rih">Kryvyi Rih</option>
+                <option value="Kyiv">Kyiv</option>
                 <option value="Luhansk">Luhansk</option>
                 <option value="Lutsk">Lutsk</option>
                 <option value="Lviv">Lviv</option>
@@ -58,13 +60,16 @@
                 <option value="Makiivka">Makiivka</option>
                 <option value="Mariupol">Mariupol</option>
                 <option value="Melitopol">Melitopol</option>
+                <option value="Moldova">Moldova</option>
                 <option value="Mukacheve">Mukacheve</option>
                 <option value="Mykolaiv">Mykolaiv</option>
                 <option value="Nikopol">Nikopol</option>
                 <option value="Odesa">Odesa</option>
                 <option value="Pavlohrad">Pavlohrad</option>
+                <option value="Poland">Poland</option>
                 <option value="Poltava">Poltava</option>
                 <option value="Rivne">Rivne</option>
+                <option value="Romania">Romania</option>
                 <option value="Sevastopol">Sevastopol</option>
                 <option value="Sievierodonetsk">Sievierodonetsk</option>
                 <option value="Simferopol">Simferopol</option>
@@ -80,28 +85,28 @@
               </select>
             <input type="date" id="userDate" placeholder="date" >
 
-            <button id="next">Next</button>
+            <button id="nextOne" onclick="focusNextInput('form1', 'form2')">Next</button>
         </form>
     </div>
 
     <img src="Homeimages/right-arrow .png" alt="next">
 
-    <div class="rideDetails">
-        <form action="submit">
+    <div class="rideDetails" id="form2">
+        <form method="dialog" action="submit">
             <h1>Passenger's details</h1>
 
             <input type="text" id="userName" placeholder="name" required>
             <input type="text" id="userEmail" placeholder="email" required>
             <input type="text" id="userAddress" placeholder="address" required>
 
-            <button>Next</button>
+            <button onclick="focusNextInput('form2', 'form3')">Next</button>
         </form>
     </div>
 
     <img src="Homeimages/right-arrow .png" alt="next">
 
-    <div class="rideDetailsReceipt">
-        <form method="dialog"  action="submit">
+    <div class="rideDetailsReceipt" id="bookingPass">
+        <form method="dialog"  action="submit" id="form3">
             <h1>Booking Pass</h1>
 
             <div class="recieptText">
