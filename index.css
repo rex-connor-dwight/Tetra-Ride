@@ -24,6 +24,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -309,7 +313,7 @@ header button{
 }
 
 .aboutRight p{
-    text-align: justify;
+    text-align: right;
     margin-top: 2rem;
     font-size: 1rem;
     font-weight: 500;
@@ -325,6 +329,20 @@ header button{
     font-size: 1rem;
     font-weight: 500;
 }
+
+.aboutRight a{
+    width: 100%;
+    border: 0;
+    background: var(--blue);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    cursor: pointer;
+    color: var(--lightgreen);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
 
 
 .Bookings{
@@ -422,6 +440,7 @@ header button{
     -moz-appearance: none;
     -ms-appearance: none;
     appearance: none;
+    width: 100%;
 }
 
 
@@ -626,12 +645,20 @@ header button{
 }
 
 .total{
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 1.2vw;
     margin: 2rem 0 2vw 0;
     background: var(--blue);
     padding: 1rem 7.3vw;
     color: var(--lightgreen);
+}
+
+.total h4{
+    margin-left: 1rem;
+    color: var(--lightgreen);
+    display: block;
 }
 
 

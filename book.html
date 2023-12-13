@@ -23,12 +23,60 @@
             <h1>Ride details</h1>
 
             <input type="text" id="userPin" placeholder="from" >
-            <select name="cars" id="userDes" >
+            <select onchange="userDesValue()" name="cars" id="userDes" >
+                <option value="Alchevsk">Alchevsk</option>
+                <option value="Berdiansk">Berdiansk</option>
+                <option value="bilaTserkva">Bila Tserkva</option>
+                <option value="Brovary">Brovary</option>
                 <option value="Cherkasy">Cherkasy</option>
-                <option value="Chisinau">Chisinau</option>
-                <option value="Kiev">Kiev</option>
+                <option value="Chernihiv">Chernihiv</option>
+                <option value="Cherkasy">Cherkasy</option>
+                <option value="Chernivtsi">Chernivtsi</option>
+                <option value="Chervonohrad">Chervonohrad</option>
+                <option value="Dnipro">Dnipro</option>
+                <option value="Donetsk">Donetsk</option>
+                <option value="Dovzhansk">Dovzhansk</option>
+                <option value="Drohobych">Drohobych</option>
+                <option value="Horlivka">Horlivka</option>
+                <option value="Ivano-Frankivsk">Ivano-Frankivsk</option>
+                <option value="Kamianets-Podilskyi">Kamianets-Podilskyi</option>
+                <option value="Kamianske">Kamianske</option>
+                <option value="Kharkiv">Kharkiv</option>
+                <option value="Kerch">Kerch</option>
+                <option value="Kherson">Kherson</option>
+                <option value="Khmelnytskyi">Khmelnytskyi</option>
+                <option value="Khrustalnyi">Khrustalnyi</option>
+                <option value="Konotop">Konotop</option>
+                <option value="Kramatorsk">Kramatorsk</option>
+                <option value="Kremenchuk">Kremenchuk</option>
+                <option value="Kropyvnytskyi">Kropyvnytskyi</option>
+                <option value="Kryvyi-Rih">Kryvyi Rih</option>
+                <option value="Luhansk">Luhansk</option>
+                <option value="Lutsk">Lutsk</option>
                 <option value="Lviv">Lviv</option>
-                <option value="Warsaw">Warsaw</option>
+                <option value="Lysychansk">Lysychansk</option>
+                <option value="Makiivka">Makiivka</option>
+                <option value="Mariupol">Mariupol</option>
+                <option value="Melitopol">Melitopol</option>
+                <option value="Mukacheve">Mukacheve</option>
+                <option value="Mykolaiv">Mykolaiv</option>
+                <option value="Nikopol">Nikopol</option>
+                <option value="Odesa">Odesa</option>
+                <option value="Pavlohrad">Pavlohrad</option>
+                <option value="Poltava">Poltava</option>
+                <option value="Rivne">Rivne</option>
+                <option value="Sevastopol">Sevastopol</option>
+                <option value="Sievierodonetsk">Sievierodonetsk</option>
+                <option value="Simferopol">Simferopol</option>
+                <option value="Sloviansk">Sloviansk</option>
+                <option value="Sumy">Sumy</option>
+                <option value="Ternopil">Ternopil</option>
+                <option value="Uman">Uman</option>
+                <option value="Uzhhorod">Uzhhorod</option>
+                <option value="Vinnytsia">Vinnytsia</option>
+                <option value="Yevpatoriia">Yevpatoriia</option>
+                <option value="Zaporizhzhia">Zaporizhzhia</option>
+                <option value="Zhytomyr">Zhytomyr</option>
               </select>
             <input type="date" id="userDate" placeholder="date" >
 
@@ -129,7 +177,9 @@
                         <button><img src="Homeimages/Crypto.png" alt=""></button>
                     </div>
                 </div>
-                <div class="total"><h3>Total: EURO 560.00</h3></div>
+                <div class="total"><h3>Total:</h3>
+                    <h4  id="totalAmount">EURO 000.00</h4>
+                </div>
             </div>
 
         </section>
@@ -218,151 +268,10 @@
 
     </section>
 
-
-    <script>
-
-        const userPin = document.getElementById("userPin");
-        const from = document.getElementById("from");
-
-        const userDes = document.getElementById("userDes");
-        const torh = document.getElementById("torh");
-
-        const userDate = document.getElementById("userDate");
-        const nDate = document.getElementById("nDate");
+    <script src="book.js"></script>
+    <script src="bookdyn.js"></script>
 
 
-        const userName = document.getElementById("userName");
-        const nName = document.getElementById("nName");
-
-        const userEmail = document.getElementById("userEmail");
-        const nEmail = document.getElementById("nEmail");
-
-        const userAddress = document.getElementById("userAddress");
-        const nAddress = document.getElementById("nAddress");
-
-
-        
-
-
-
-
-
-
-        userPin.addEventListener("input", function () {
-        from.textContent = userPin.value;
-    });
-
-    userDes.addEventListener("input", function () {
-        torh.textContent = userDes.value;
-    });  
-
-    userDate.addEventListener("input", function () {
-        nDate.textContent = userDate.value;
-    }); 
-
-
-    userName.addEventListener("input", function () {
-        nName.textContent = userName.value;
-    }); 
-
-    userEmail.addEventListener("input", function () {
-        nEmail.textContent = userEmail.value;
-    }); 
-
-    userAddress.addEventListener("input", function () {
-        nAddress.textContent = userAddress.value;
-    });
-
-        
-     // JavaScript to show and hide the popup
-     const showPopupButton = document.getElementById('showPopupButton');
-        const popup = document.getElementById('popup');
-        const closePopupButton = document.getElementById('closePopupButton');
-
-        showPopupButton.addEventListener('click', () => {
-            popup.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Disable scrolling
-        });
-
-        closePopupButton.addEventListener('click', () => {
-            popup.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Enable scrolling
-        });
-
-
-         // Function to check if all inputs are filled
-         function checkInputs() {
-            if (userPin.value.trim() !== '' && userDes.value.trim() !== '' && userDate.value.trim() !== '') {
-                showPopupButton.removeAttribute('disabled');
-            } else {
-                showPopupButton.setAttribute('disabled', 'true');
-            }
-        }
-         // Add event listeners to the input fields to check for changes
-         userPin.addEventListener('input', checkInputs);
-         userDes.addEventListener('input', checkInputs);
-         userDate.addEventListener('input', checkInputs);
-
-
-         // JavaScript to show and hide the paymenOption
-     const checkOut = document.getElementById('checkOut');
-        const paymentOption = document.getElementById('paymentOption');
-        //const closePopupButton = document.getElementById('closePopupButton');
-
-        checkOut.addEventListener('click', () => {
-            paymentOption.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Disable scrolling
-        });
-
-        closePopupButton.addEventListener('click', () => {
-            popup.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Enable scrolling
-        });
-
-        //PayPal popup
-        const showPayPal = document.getElementById('showPayPal');
-        const payPal = document.getElementById('payPal');
-        const closePayPal = document.getElementById('closePayPal');
-
-        showPayPal.addEventListener('click', () => {
-            payPal.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Disable scrolling
-        });
-
-        closePayPal.addEventListener('click', () => {
-            payPal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Enable scrolling
-        });
-
-
-        //applePay popup
-        const showApplePay = document.getElementById('showApplePay');
-        const applePay = document.getElementById('applePay');
-        const closeApplePay = document.getElementById('closeApplePay');
-
-        showApplePay.addEventListener('click', () => {
-            applePay.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Disable scrolling
-        });
-
-        closeApplePay.addEventListener('click', () => {
-            applePay.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Enable scrolling
-        });
-
-
-        //cardPay popup
-        const showCardPay = document.getElementById('showCardPay');
-        const cardPay = document.getElementById('cardPay');
-
-        showCardPay.addEventListener('click', () => {
-            cardPay.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Disable scrolling
-        });
-
-
-        
-    </script>
  
 </body>
 </html>
