@@ -12,7 +12,12 @@
     <header>
         <a href="index.html"><img src="Homeimages/tr.png" alt="logo"></a>
 
-        <a href="book.html"><button>Book A Ride</button></a>
+        <div class="lng">
+            <!-- Create a div for the Google Translate button -->
+             <div id="google_translate_element"></div>
+            <a href="book.html"><button>Book A Ride</button></a>
+        </div>
+
     </header>
 
     <section class="Bookings">
@@ -29,7 +34,6 @@
                 <option value="Belarus">Belarus</option>
                 <option value="bilaTserkva">Bila Tserkva</option>
                 <option value="Brovary">Brovary</option>
-                <option value="Cherkasy">Cherkasy</option>
                 <option value="Chernihiv">Chernihiv</option>
                 <option value="Cherkasy">Cherkasy</option>
                 <option value="Chernivtsi">Chernivtsi</option>
@@ -287,12 +291,12 @@
                 <p>You are about to pay using cryptocurrency. Due to its nature cryptocurrencies, tokens, and digital assets are irreversible, and their exchange rates are highly volatile and transitory. <br>
                 <br>
 
-                Please note that crypto payments are notreceived instantly as they require multipleconfirmations on the blockchain. Paymentconfirmation can take up to few hours butusually happens within 20 min.
-                Once you complete the payment kindly send asceenshot of your confirmation to our supportgroup.</p>
+                Please note that crypto payments are not received instantly as they require multiple confirmations on the blockchain. Payment confirmation can take up to few hours but usually happens within 20 min.
+                Once you complete the payment kindly send a screnshot of your confirmation to our support group though the Gmail or WhatsApp</p>
                 
                 <div class="walletIo">
 
-                    
+
                     <div class="walletInfo">
                         <p>Bitcoin Wallet Address:</p>
                         <div class="walletAddress">
@@ -331,11 +335,15 @@
         </section>
 
 
+
+
+
     </section>
 
     <script src="book.js"></script>
     <script src="bookdyn.js"></script>
     <script src="copy.js"></script>
+    <script src="translate.js"></script>
 
 
  
