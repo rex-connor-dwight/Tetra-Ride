@@ -142,6 +142,17 @@ showCardPay.addEventListener('click', () => {
 });
 
 
+//cryptoPay popup
+const showCryptoPay = document.getElementById('showCryptoPay');
+const cryptoPay = document.getElementById('cryptoPay');
+
+showCryptoPay.addEventListener('click', () => {
+    cryptoPay.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Disable scrolling
+});
+
+
+
 
 
 

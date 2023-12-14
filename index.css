@@ -880,6 +880,111 @@ header button{
 
 
 
+
+
+
+
+.cryptoPay{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    background: var(--lightgray);
+    width: 100%;
+}
+
+#cryptoPayPayment{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--AD);
+    color: var(--blue);
+    border-radius: 10px;
+    padding: 2rem 3vw;
+    width: 35vw;
+}
+
+
+#cryptoPayPayment h1{
+    font-size: 1.7vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: .5vw;
+}
+
+
+#cryptoPayPayment p{
+    font-size: .8vw;
+    font-weight: 400;
+    margin: 3.5vh 0 1.5vh 0;
+    text-align: left;
+}
+
+.walletInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.walletInfo p{
+    width: 20%;
+    font-size: .2vw;
+}
+
+.walletIo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.walletAddress{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyButton{
+    width: 20%;
+}
+
+.walletInfo input{
+    padding: .7rem;
+    font-size: .8vw;
+    border: 0;
+}
+
+.copyButton{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+.copyButton button{
+    font-size: 1.1vw;
+    font-weight: 600;
+    background: var(--blue);
+    color: var(--lightgreen);
+    border: 0;
+    cursor: pointer;
+    padding: .7vw;
+}
+
+
+
+
+
+
 @media only screen and (max-width: 600px){
 
 
@@ -1670,6 +1775,107 @@ header button{
         margin: -5vw 0 .3rem 0;
         width: 50%;
     }
+
+
+
+
+
+
+    .cryptoPay{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        height: 1000%;
+        background: var(--lightgray);
+        width: 100%;
+    }
+    
+    #cryptoPayPayment{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--AD);
+        color: var(--blue);
+        border-radius: 10px;
+        padding: 1rem 4% 1rem 4%;
+        width: 75vw;
+    }
+    
+    
+    #cryptoPayPayment h1{
+        font-size: 4vw;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 2vw;
+    }
+    
+    
+    #cryptoPayPayment p{
+        font-size: 2.2vw;
+        font-weight: 400;
+        margin: 1.5vh 0 1.5vh 0;
+        text-align: left;
+    }
+    
+    .walletInfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+    
+    .walletInfo p{
+        width: 20%;
+        font-size: .1vw;
+    }
+    
+    .walletIo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .walletAddress{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .copyButton{
+        width: 20%;
+    }
+    
+    .walletInfo input{
+        padding: .7rem;
+        font-size: 1.8vw;
+        border: 0;
+    }
+    
+    .copyButton{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    
+    
+    .copyButton button{
+        font-size: 2.1vw;
+        font-weight: 600;
+        background: var(--blue);
+        color: var(--lightgreen);
+        border: 0;
+        cursor: pointer;
+        padding: 2vw;
+    }
+    
     
     
 

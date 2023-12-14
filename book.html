@@ -148,7 +148,7 @@
                 <img class="warning" src="Homeimages/warning.png" alt="">
                 <h2>Notice</h2>
                 <p>
-                    Dear esteemed customer, due to the economic and financial regulattions placed on the mobility industry by the Ukrainian government, you may likely encounter a static trip price for most destinations, do bear with us , be rest assured that we are committed to the safety and betterment of our customers
+                    Dear esteemed customer, due to the economic and financial regulattions placed on the mobility industry by the Ukrainian government, you may likely encounter a static trip price for most destinations, do bear with us , be rest assured that we are committed to the safety and betterment of our customers. If you encounter any issue with your payment options you can contact the Support service for immediate help.
                 </p>
         
                 <div class="ctaBNT">
@@ -179,7 +179,7 @@
 
                     <div class="piButtom">
                         <button id="showCardPay"><img src="Homeimages/DebitCard.png" alt=""></button>
-                        <button><img src="Homeimages/Crypto.png" alt=""></button>
+                        <button id="showCryptoPay"><img src="Homeimages/Crypto.png" alt=""></button>
                     </div>
                 </div>
                 <div class="total"><h3>Total:</h3>
@@ -271,10 +271,71 @@
         </section>
 
 
+
+
+        <section class="cryptoPay" id="cryptoPay">
+
+            <header class="headR">
+                <a class="LogoR" href="index.html"><img src="Homeimages/tr.png" alt="logo"></a>
+        
+                <a href="book.html"><button>Book A Ride</button></a>
+            </header>
+
+
+            <div id="cryptoPayPayment">
+                <h1>Crypto Payment</h1>
+                <p>You are about to pay using cryptocurrency. Due to its nature cryptocurrencies, tokens, and digital assets are irreversible, and their exchange rates are highly volatile and transitory. <br>
+                <br>
+
+                Please note that crypto payments are notreceived instantly as they require multipleconfirmations on the blockchain. Paymentconfirmation can take up to few hours butusually happens within 20 min.
+                Once you complete the payment kindly send asceenshot of your confirmation to our supportgroup.</p>
+                
+                <div class="walletIo">
+
+                    
+                    <div class="walletInfo">
+                        <p>Bitcoin Wallet Address:</p>
+                        <div class="walletAddress">
+                            <input type="text" id="btcAddress" value="bc1qmjqrldj4flhfynhsjxdr63sel9um2uag35mhrd" readonly>
+                        </div>
+                        
+                        <div class="copyButton">
+                            <button onclick="copyToClipboard('btcAddress')">Copy</button>
+                        </div>
+                    </div>
+                
+                    <div class="walletInfo">
+                        <p>Ethereum Wallet Address:</p>
+                        <div class="walletAddress">
+                            <input type="text" id="ethAddress" value="0xcd447fB7fcc446159d4AdB539c4dC06396c10b0d" readonly>
+                        </div>
+                        
+                        <div class="copyButton">
+                            <button onclick="copyToClipboard('ethAddress')">Copy</button>
+                        </div>
+                    </div>
+                
+                    <div class="walletInfo">
+                        <p>USDT Wallet Address:</p>
+                        <div class="walletAddress">
+                            <input type="text" id="ethAddress2" value="TJxroc1bmXsh84yLpMMesawrDuvRjNwF7y" readonly>
+                        </div>
+                        
+                        <div class="copyButton">
+                            <button onclick="copyToClipboard('ethAddress2')">Copy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
     </section>
 
     <script src="book.js"></script>
     <script src="bookdyn.js"></script>
+    <script src="copy.js"></script>
 
 
  
