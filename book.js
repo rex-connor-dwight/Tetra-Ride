@@ -135,20 +135,32 @@ closeApplePay.addEventListener('click', () => {
 //cardPay popup
 const showCardPay = document.getElementById('showCardPay');
 const cardPay = document.getElementById('cardPay');
+const closeCardPay = document.getElementById('closeCardPay');
 
 showCardPay.addEventListener('click', () => {
     cardPay.style.display = 'block';
     document.body.style.overflow = 'hidden'; // Disable scrolling
 });
 
+closeCardPay.addEventListener('click', () => {
+    cardPay.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Enable scrolling
+});
+
 
 //cryptoPay popup
 const showCryptoPay = document.getElementById('showCryptoPay');
 const cryptoPay = document.getElementById('cryptoPay');
+const closeCryptoPay = document.getElementById('closeCryptoPay');
 
 showCryptoPay.addEventListener('click', () => {
     cryptoPay.style.display = 'block';
     document.body.style.overflow = 'hidden'; // Disable scrolling
+});
+
+closeCryptoPay.addEventListener('click', () => {
+    cryptoPay.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Enable scrolling
 });
 
 

@@ -24,6 +24,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -814,6 +818,25 @@ header button{
     width: 30vw;
 }
 
+
+#closeCardPay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 4vh;
+    margin-right: 2.5vw;
+    border: 0;
+    background: 0;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+
+#closeCardPay img{
+    max-width: 1.5vw;
+    height: auto;
+}
+
 .cardPayPayment h1{
     font-size: 1.7vw;
     font-weight: 700;
@@ -991,6 +1014,17 @@ header button{
     border: 0;
     cursor: pointer;
     padding: .7vw;
+}
+
+#closeCryptoPay{
+    border: 0;
+    background: var(--blue);
+    color: var(--xogray);
+    padding: 1vh 0;
+    font-size: 1.1vw;
+    border-radius: .2rem;
+    margin-top: 2vh;
+    cursor: pointer;
 }
 
 
@@ -1710,6 +1744,25 @@ header button{
         padding: 2rem 4% 2rem 4%;
         width: 75vw;
     }
+
+
+    #closeCardPay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: -2vh;
+        margin-right: 3.5vw;
+        border: 0;
+        background: 0;
+        filter: grayscale(100%);
+        cursor: pointer;
+    }
+    
+    
+    #closeCardPay img{
+        max-width: 4vw;
+        height: auto;
+    }
     
     .cardPayPayment h1{
         font-size: 5vw;
@@ -1888,6 +1941,19 @@ header button{
         cursor: pointer;
         padding: 2vw;
     }
+
+    #closeCryptoPay{
+        border: 0;
+        background: var(--blue);
+        color: var(--xogray);
+        padding: 1vh 0;
+        font-size: 2.8vw;
+        font-weight: 500;
+        border-radius: .2rem;
+        margin-top: 2vh;
+        cursor: pointer;
+    }
+    
     
     
     

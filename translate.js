@@ -2,7 +2,7 @@
 
     // Callback function for initializing Google Translate API
     function googleTranslateElementInit() {
-        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'es,fr,uk,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'es,fr,uk,tr,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
     }
 
     // Load the Google Translate API
